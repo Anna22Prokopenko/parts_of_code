@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>First page</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/form.css"/>
+	</head>
+	<body>
+		<form class="form">
+			<div class="formHeader">
+				<h3><img src="img/message26.png"/>Напишите нам письмо</h3>
+			</div>
+			<div class="bodyForm">
+				<div class="name">
+					<label for="name">Ваше имя:</label>
+					<input placeholder="имя" type="text" id="name"/>
+				</div>
+				<div class=clearfix></div>
+				<div class="password">	
+					<label for="password">Ваш E-MAIL:</label> 
+					<input placeholder="e-mail" type="password" id="password"/>
+				</div>
+				<div class=clearfix></div>
+				<div class="select">
+					<label for="select">Тема письма:</label> 
+						<select>
+								<option>-выбрать тему-</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+						<select/> 
+				</div>
+				<div class=clearfix></div>
+				<div class="textarea">
+						<label for="textarea">Сообщение:</label> 
+						<textarea  id="textarea" placeholder="Введите сообщение">
+						</textarea>
+				</div>
+				<div class=clearfix></div>
+				<p>Введите капчу и нажмите "отправить"</p>
+				<div class="kapcha">
+					<label for="text">9+18=</label> <input type="text" id="text"/> 
+				</div>
+				<div class=clearfix></div>
+			</div>
+			<div class="end">
+				<div class="button">
+					<input class="send" type="button" value="ОТПРАВИТЬ"/>
+					<input class="clear" type="reset" value="ОЧИСТИТЬ"/>
+				</div>
+			</div>
+				</form>
+	</body>
+</html>

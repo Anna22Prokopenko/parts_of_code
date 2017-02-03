@@ -1,0 +1,170 @@
+/*FORM*/
+.form1 {
+	position: relative;
+}	
+.form1 .input_radio {
+	display: none;
+}
+.form1 .input_radio:checked ~ .wrapper_form {
+	display: block;
+}
+.formHeader {
+	position: absolute;
+	top: 385px;
+	left: 100px;
+	display: inline-block;
+	width: 330px; 
+	height: 50px;
+	background: #bbb;
+	border-top: 3px groove white;
+	z-index: 1;
+}
+.formHeader:hover {
+	background: #ff2e7d;
+}
+.formHeader  h3 {
+	text-align: center;
+	color: black;
+	margin-top: 0px;
+	font-size: 22px; 
+	line-height: 50px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}	
+.formHeader  img {
+	float: left;
+	margin-left: 25px;
+	margin-top: 10px;
+} 
+.wrapper_form {
+	position: absolute;
+    left: 100px;
+    top: 55px;
+	width: 330px;
+	height: 385px;
+	background: #bbb; 
+	max-width: 350px;  
+	box-shadow: 
+	0 1px 5px rgba(0, 0, 0, .5), 
+	-26px 0 22px -23px rgba(0, 0, 0, .8), 
+	26px 0 22px -23px rgba(0, 0, 0, .8), 
+	0 0 40px rgba(0, 0, 0, .1) inset; 
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-0-transition: all 0.3s ease-in-out; 
+	display: none;
+	opacity: .6;
+}
+.form1 .bodyForm {
+	padding: 1em;
+	border-bottom: 3px groove white;
+}
+.form1 .bodyForm p {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.password {
+	height: 30px;
+	border-bottom: 3px groove white;
+}
+.name input {
+	width: 180px;
+	height: 18px;
+	margin-bottom: 10px;
+	float: right;
+	transition: all 0.4s ease-out;
+	padding-left: 5px;
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-0-transition: all 0.4s ease-in-out;
+}
+.name input:focus {
+	outline: none;
+	border-color: rgba(0,125,182,0.7);
+}
+.clearfix {
+	clear: both;
+}
+.password input {
+	width: 180px;
+	height: 18px;
+	margin-bottom: 10px;
+	float: right;
+	transition: all 0.4s ease-out;
+	padding-left: 5px;
+}
+.password input:focus {
+	outline: none;
+	border-color: rgba(0,125,182,0.7);
+}
+.select select {
+	width: 187px;
+	height: 23px;
+	float: right;
+	transition: all 0.4s ease-out;
+	text-align: center;
+	margin-top: 10px;
+}
+.select label {
+	margin-top: 10px;
+}
+.select select:focus {
+	outline: none;
+	border-color: rgba(0,125,182,0.7);
+}
+.textarea textarea {
+	float: right;
+	width: 180px;
+	height: 50px;
+	transition: all 0.4s ease-out;
+	margin-top: 10px;
+}
+.textarea textarea:focus {
+	outline: none;
+	border-color: rgba(0,125,182,0.7);
+}
+.textarea label {
+	margin-top: 25px;
+}
+.kapcha input {
+	width: 180px;
+	height: 18px;
+	margin-top: 10px;
+	float: right;
+	transition: all 0.4s ease-out;
+}
+.kapcha {
+	border-top: 3px groove white;
+}
+.kapcha label {
+	margin-top: 12px;
+}
+.button {
+	position: relative;
+	height: 30px;
+	margin-top: 10px;
+}
+.button input {
+	width: 120px;
+	height: 30px;
+	
+}
+.button input:hover{
+	background: #11aeeb;
+	color: #fdfdfd;
+	
+}
+.button .send {
+	position: absolute;
+	left: 40px;
+}
+.button .clear {
+	position: absolute;
+	right: 40px;
+}
+label {
+	float:left;
+}
+/*FORM*/

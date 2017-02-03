@@ -1,0 +1,11 @@
+.wrapper {
+  width: 1000 px;
+  margin: 0 auto;
+  padding: 100px 0; }
+
+.t {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 40px 20px;
+  border-color: transparent transparent red transparent; }

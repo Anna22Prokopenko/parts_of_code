@@ -1,0 +1,95 @@
+$font_size: 3vh;
+$font_family: 'Amatic SC', cursive;
+$wibro_translate_minus: -1%;
+$wibro_translate_plus: 1%;
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+.button {
+	margin: 0 auto;
+	font-family: $font_family;
+	font-size: $font_size;
+	background-color: white;
+	border-style: none;
+	border-radius: 1vh;
+	padding: 1vh 2vh;
+	&:hover {
+		background-color: black;
+		color: white;
+		-webkit-animation: 0.1s tremor ease-out infinite;  
+		animation: 0.1s tremor ease-out infinite;    
+	}
+	&:active {
+		outline: none;
+		animation-play-state: paused;
+		background-color: white;
+		color: black;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+@-webkit-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        top:-1px;
+        -webkit-transform: translate($wibro_translate_minus, $wibro_translate_minus), rotate(1deg);
+        transform: translate($wibro_translate_minus, $wibro_translate_minus), rotate(1deg);
+    }
+    50%, 100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translate($wibro_translate_plus), rotate(1deg);
+        transform: translate($wibro_translate_plus), rotate(1deg);
+    }
+}
+@-moz-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translate($wibro_translate_minus, $wibro_translate_minus);
+        transform: translate($wibro_translate_minus, $wibro_translate_minus);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translate($wibro_translate_plus), rotate(1deg);
+        transform: translate($wibro_translate_plus), rotate(1deg);
+    }
+}
+@-ms-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translate($wibro_translate_minus, $wibro_translate_minus);
+        transform: translate($wibro_translate_minus, $wibro_translate_minus), rotate(1deg);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translate($wibro_translate_plus), rotate(1deg);
+        transform: translate($wibro_translate_plus), rotate(1deg);
+    }
+}
+@-o-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translate($wibro_translate_minus, $wibro_translate_minus);
+        transform: translate($wibro_translate_minus, $wibro_translate_minus);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translate($wibro_translate_plus), rotate(1deg);
+        transform: translate($wibro_translate_plus), rotate(1deg);
+    }
+}
+@keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translate($wibro_translate_minus, $wibro_translate_minus);
+        transform: translate($wibro_translate_minus, $wibro_translate_minus);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translate($wibro_translate_plus), rotate(1deg);
+        transform: translate($wibro_translate_plus), rotate(1deg);
+    }
+}

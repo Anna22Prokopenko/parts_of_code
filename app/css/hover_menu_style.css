@@ -1,0 +1,73 @@
+body {
+	background: #F0F0F0;
+	font: 16px Arial, sans-serif;
+}
+.nav {
+	list-style: none;
+	width: 50px;
+	padding: 0;
+	margin: 30px;
+	opacity: .5;
+	transition: opacity 0.3s ease-in-out;
+}
+.nav:hover {
+	opacity: 1;
+}
+.nav li {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	transition: width .2s ease-in-out, height .2s ease-in-out .2s;
+}
+.nav li:hover {
+	width: 200px;
+	height: 175px;
+}
+.nav li a {
+	display: block;
+	background: #bbb;
+	margin: 1px;
+	width: 200px;
+	height: 40px;
+	color: #FFFFFF;
+	line-height: 40px;
+	padding-left: 15px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-0-transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+.nav li a:hover {
+	background: #2fc5ff;
+ 
+}
+.nav li a:first-child {
+	font-size: 1.2em;
+	text-indent: 36px;
+	position: relative;
+	line-height: 50px;
+	height: 50px;
+	
+}
+.nav li a:first-child:before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sprite.png) 0px 0px no-repeat;
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	
+}
+ .nav li.settings a:first-child:before {
+	background-position: -32px 0px;	
+}
+.nav li.link a:first-child:before {
+	background-position: -64px 0px;	
+}
+.nav li.search a:first-child:before {
+	background-position: -96px -0px;	
+}
+
